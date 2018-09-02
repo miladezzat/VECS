@@ -1,0 +1,65 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/admin/profile">Profile</a></li>
+    <li class="breadcrumb-item"><a href="/admin/dashboard">Dashboard</a></li>
+	<li class="breadcrumb-item"><a href="/admin/{{type}}">{{type}}</a></li>
+	<li class="breadcrumb-item"><a href="/admin/daysreport/{{type}}">Days Reports</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Daily Report</li>
+  </ol>
+</nav>
+<div class="row">
+    <div class="col-12">
+        <h1>{{results.type}} Daily Report</h1>
+        <hr>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title"><span class="text-info">Type Readigs: {{type}}</span> <span class="text-warning" style="float:right">Date of Report {{date}}</span></h5>
+                <h6 class="card-subtitle mb-2 text-muted">Daily Report</h6>
+                <ul class="list-group">
+					<li class="list-group-item text-danger">Max Value in day: {{maxValue}} &#8451;</li>
+					<li class="list-group-item text-warning">Min Value in day: {{minValue}} &#8451;</li>
+					<li class="list-group-item">Device Type: {{type}} Sensor <span class="" style="float:right;">location: {{location}}</span></li>
+					<li class="list-group-item">
+						<ul class="list-group">
+							<h class="card-title text-center text-danger" > All Upnmormal Readings in  {{date}} </h>
+							{{#each results}}
+							<li class="list-group-item"> <span class="text-success">Value: {{this.value}} &#8451;</span> <span class="text-info" style="float: right;">Time : {{this.hour}} : {{this.mins}} : {{this.second}}</span> </li>
+							{{/each}}
+						</ul>
+					</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div id="dialyReport" style="height: 300px; width: 100%;"></div>
+    </div>
+	<div class="col-12">
+		<p class="text-success">notes for understanding shape, Horzental for value and Vertical for Time By Second</p>
+	</div>
+</div>
+
+<script>
+window.onload = function () {
+var chart = new CanvasJS.Chart("dialyReport", {
+	animationEnabled: true,
+	theme: "light1", // "light1", "light2", "dark1", "dark2"
+	title:{
+		text: " Daily Report"
+	},
+	data: [{
+		type: "column", //change type to bar, line, area, pie, etc
+		indexLabel: "{y}", //Shows y value on all Data Points
+		indexLabelFontColor: "#5A5757",
+		indexLabelPlacement: "outside",
+		dataPoints: [
+		{{#each results}}
+			{ x: parseFloat({{this.second}}), y: parseFloat({{this.value}}) },
+		{{/each}}
+		]
+	}]
+});
+chart.render();
+
+}
+</script>

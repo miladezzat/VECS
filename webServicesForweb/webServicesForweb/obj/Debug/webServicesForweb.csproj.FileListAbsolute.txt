@@ -1,0 +1,12 @@
+C:\Users\keroles\Desktop\webServicesForweb\webServicesForweb\bin\webServicesForweb.dll.config
+C:\Users\keroles\Desktop\webServicesForweb\webServicesForweb\bin\webServicesForweb.dll
+C:\Users\keroles\Desktop\webServicesForweb\webServicesForweb\bin\webServicesForweb.pdb
+C:\Users\keroles\Desktop\webServicesForweb\webServicesForweb\obj\Debug\webServicesForweb.csprojResolveAssemblyReference.cache
+C:\Users\keroles\Desktop\webServicesForweb\webServicesForweb\obj\Debug\webServicesForweb.dll
+C:\Users\keroles\Desktop\webServicesForweb\webServicesForweb\obj\Debug\webServicesForweb.pdb
+F:\الشغل الجديد\new melo\webServicesForweb\webServicesForweb\bin\webServicesForweb.dll.config
+F:\الشغل الجديد\new melo\webServicesForweb\webServicesForweb\bin\webServicesForweb.dll
+F:\الشغل الجديد\new melo\webServicesForweb\webServicesForweb\bin\webServicesForweb.pdb
+F:\الشغل الجديد\new melo\webServicesForweb\webServicesForweb\obj\Debug\webServicesForweb.csprojResolveAssemblyReference.cache
+F:\الشغل الجديد\new melo\webServicesForweb\webServicesForweb\obj\Debug\webServicesForweb.dll
+F:\الشغل الجديد\new melo\webServicesForweb\webServicesForweb\obj\Debug\webServicesForweb.pdb

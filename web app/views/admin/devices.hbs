@@ -1,0 +1,42 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/admin/profile">Profile</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Devices</li>
+  </ol>
+</nav>
+<section id="devices">
+    <div class="row"> 
+        <div class="col-12">
+            {{#if foundDevices}}
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Type</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Details</th>
+                        <th scope="col">Update</th>
+                        <th scope="col">Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {{#each devices}}
+                    <tr>
+                        <th scope="row">{{this.id}}</th>
+                        <td>{{this.name}}</td>
+                        <td>{{this.type}}</td>
+                        <td>{{this.status}}</td>
+                        <td><a href="/admin/details/{{this.id}}" class="btn btn-primary"><i class="fas fa-info-circle"></i></a></td>
+                        <td><a href="/admin/updatedevice/{{this.id}}" class="btn btn-warning"><i class="fas fa-wrench"></i></a></td>
+                        <td><a href="/admin/deletedevice/{{this.id}}" class="btn btn-danger"> <i class="fas fa-trash"></i> </a></td>
+                    </tr>
+                {{/each}}
+                </tbody>
+            </table>
+            {{else}}
+            <h1 class="diplay-3 text-center">No Devices</h1>
+            {{/ if}}
+        </div>
+    </div>
+</section>

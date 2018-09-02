@@ -1,0 +1,14 @@
+function getUsers() {
+  sql.connect(dbConfig, err => {
+    new sql.Request().query("SELECT * FROM users WHERE id=2", (err, result) => {
+      console.log(result);
+    })
+    new sql.Request()
+        .input('input_parameter', sql.Int, value)
+        .output('output_parameter', sql.VarChar(50))
+        .execute('procedure_name', (err, result) => {
+          console.log(result);
+    })
+  })
+
+}

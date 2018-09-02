@@ -1,0 +1,25 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item active" aria-current="page">Profile</li>
+  </ol>
+</nav>
+<section id="profile">
+  <div class="row">
+    <div class="col-12">
+      <h4 class="display-4 text-success text-capitalize">{{user.username}}</h4>
+      <hr>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-md-4">
+      <img src= "../images/user.jpg" alt="admin's image" class="img-fluid" id="user-img-profile" >
+    </div>
+    <div class="col-12 col-md-8">
+      <br>
+      <p><a href="/admin/setting/{{ user.id}}" class="btn btn-warning btn-block"> <i class="fas fa-cogs"></i> Change Account Settings</a></p>
+      <p><a href="/admin/dashboard" class="btn btn-primary btn-block"><i class="fas fa-clock"></i> Dashboard</a></p>
+      <p><a href="/admin/addnewdevice" class="btn btn-success btn-block"><i class="fas fa-plus"></i> Add New Device </a></p>
+      <p><a href="/admin/devices" class="btn btn-info btn-block"> <i class="fas fa-database"></i> Devices </a></p>
+    </div>
+  </div>
+</section>

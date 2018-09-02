@@ -1,0 +1,145 @@
+/*#009688 !important*/
+/*
+font-family: 'Oswald', sans-serif;
+font-family: 'Slabo 27px', serif;
+font-family: 'Source Sans Pro', sans-serif;
+*/
+body{
+  background-color: #DFE;
+}
+/*=============================< Start Style of Navbar >========================*/
+.bg-light{
+  background-color: #009688 !important;
+  font-family: 'Slabo 27px', serif;
+}
+.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link {
+  color: #ffffff !important;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
+  color: #ffffff !important;  
+}
+/*=============================< End Style of Navbar >========================*/
+
+/*=============================< Start Style of Index page >========================*/
+#main{
+  padding-top: 5%;
+  padding-bottom: 2%;
+}
+#main .logo{
+  border: 1px solid #EE6E73;
+}
+/*=============================< End Style of index page >========================*/
+
+/*=============================< Start Style of login modal >========================*/
+#login {
+  font-family: 'Slabo 27px', serif;
+}
+.modal-header h3{
+  width: 100%;
+}
+/*=============================< End Style of login model >========================*/
+
+/*=============================< Start Style of Dashboard >========================*/
+.imge-link{
+  box-shadow: 0 0 20px #009688;
+  margin: 2%;
+}
+.imge-link:hover{
+  box-shadow: 0 0 20px #123456;
+}
+/*=============================< End Style of Dashboard >========================*/
+
+/*=============================< Start Style of Footer >========================*/
+footer{
+  /*position: absolute;*/
+  width: 100%;
+  /*bottom: 0;*/
+  margin-top: 11%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: #009688;
+  font-size: 24px;
+  color: #ffffff !important;
+  font-family: 'Oswald', sans-serif;
+}
+/*=============================< End Style of Footer >========================*/
+
+
+
+
+
+/**********addnewdevice************/
+
+#addnewdevice {
+  padding-top: 2%;
+  padding-bottom: 3%;
+}
+#addnewdevice form {
+  margin-top: 3%;
+}
+/*********************************************/
+
+/**=====================< Start Account Settings Design >======================*/
+#accountSettings{
+  padding-top: 3%;
+  padding-bottom: 2%;
+}
+#accountSettings h1{
+  padding-top: 2%;
+  padding-bottom: 3%;
+}
+#accountSettings form{
+  background-color: #c3e6cb;
+  padding: 5% 3%;
+}
+/**=====================< Ens Account Settings Design  >======================*/
+
+/**=====================< Ens Device Details Design  >======================*/
+#deviceDetails {
+  padding-top: 5%;
+  padding-bottom: 3%;
+}
+#deviceDetails #live-reading {
+  margin-top: 3%;
+}
+/**=====================< Ens  Device Details Design  >======================*/
+
+/**=====================< Start DaysReports Page Design >======================*/
+#days-reports h1{
+  padding-bottom: 3%;
+}
+#days-reports .day{
+  box-shadow: 0 0 20px #123456;
+  padding: 2%;
+}
+#days-reports a{
+  text-decoration: none
+}
+/**=====================< End DaysReports Page Design >======================*/
+
+
+/*For Phone*/
+
+@media only screen and (max-width: 600px){
+  #devices .table td, .table th {
+    padding: 1%;
+    font-size: 8px
+  }
+  #devices  .btn {
+    font-size: 10px!important;
+  }
+}
+
+#msgalarm {
+  display: none;
+}
+#img-logo {
+  width: 40px;
+}
+#updatedevice {
+  padding-bottom: 2%;
+}
+#device-icon{
+  width: 8%;
+  cursor: pointer;
+}

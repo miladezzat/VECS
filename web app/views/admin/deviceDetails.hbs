@@ -1,0 +1,107 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/admin/profile">Profile</a></li>
+    <li class="breadcrumb-item"><a href="/admin/devices">Devices</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Details</li>
+  </ol>
+</nav>
+<section id="deviceDetails">
+    <div class="row">
+        <div class="col-12">
+            <h1>{{device.name}}</h1>
+            <hr>
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <img src="/images/filesUploaded/{{device.imagePath}}" alt="" class="img-thumbnail">
+                </div>
+                <div class="col-12 col-md-8">
+                    <div class="row">
+                        <div class="col-5"><h3>ID</h3></div>
+                        <div class="col-1"><h3>:</h3></div>
+                        <div class="col-6"><h3 id="device_num">{{device.device_num}}</h3></div>
+                        <div class="col-5"><h3>IP</h3></div>
+                        <div class="col-1"><h3>:</h3></div>
+                        <div class="col-6"><h3>{{device.ip}}</h3></div>
+                        <div class="col-5"><h3>Type</h3></div>
+                        <div class="col-1"><h3>:</h3></div>
+                        <div class="col-6"><h3>{{device.type}}</h3></div>
+                        <div class="col-5"><h3>Location</h3></div>
+                        <div class="col-1"><h3>:</h3></div>
+                        <div class="col-6"><h3>{{device.location}}</h3></div>
+                        <div class="col-5"><h3>Status</h3></div>
+                        <div class="col-1"><h3>:</h3></div>
+                        {{#if device_status}}
+                        <div class="col-6"><h3 class="text-success" id="status"> <i class="fas fa-lightbulb"></i></h3></div>
+                        {{else}}
+                        <div class="col-6"><h3 class="text-danger" id="status"><i class="fas fa-lightbulb"></i> </h3></div>
+                        {{/if}}
+                    </div>
+                    <hr>
+                </div>
+                <div class="col-12 col-md-8 offset-md-4">
+                    <a onclick="on();update('on');" class="btn btn-success btn-block" > <i class="fas fa-power-off"></i>  On</a>
+                </div>
+                <div class="col-12 col-md-8 offset-md-4">
+                    <br>
+                    <a onclick="off();update('off');" class="btn btn-danger btn-block" ><i class="fas fa-power-off"></i> Off</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    ///updated device 
+        function update(status) { 
+            var device_num = document.getElementById("device_num").innerHTML;           
+            $(document).ready(function () {
+                $.ajax({
+                    type: "POST",
+                    url: "http://localhost:3000/admin/update/"+status+"/"+device_num,
+                    //data: `{status:'on'}`,
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (responseFromServer) {
+                        //alert(status);                                        
+                    }
+                })
+            });            
+        }     
+        function on() {
+            var device_num = document.getElementById('device_num').innerHTML;
+            
+            $(document).ready(function () {
+                $.ajax({
+                    type: "POST",
+                    url: "http://localhost:4170/WebService1.asmx/OnOrOff",
+                    data: `{device_num:${device_num},status:'on'}`,
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (responseFromServer) {
+                        document.getElementById("status").innerHTML = '<i class="fas fa-lightbulb"></i>'; 
+                        document.getElementById("status").className = "text-success";                                           
+                    },
+                    error: function(error) {
+                    console.log(error);
+                    }
+                })
+            });            
+        }
+        function off() {                                   
+            var device_num = document.getElementById('device_num').innerHTML;
+            $(document).ready(function () {
+                $.ajax({
+                    async: true,
+                    type: "POST",
+                    url: "http://localhost:4170/WebService1.asmx/OnOrOff",
+                    data: `{device_num:${device_num},status:'off'}`,
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (responseFromServer) {
+                        document.getElementById("status").innerHTML = '<i class="fas fa-lightbulb"></i>';
+                        document.getElementById("status").className = "text-danger";
+                    }
+                })
+            });
+        }
+</script>

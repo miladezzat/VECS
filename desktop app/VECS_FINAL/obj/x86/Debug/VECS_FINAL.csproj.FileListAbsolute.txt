@@ -1,0 +1,57 @@
+c:\users\keroles\documents\visual studio 2010\Projects\VECS_FINAL\VECS_FINAL\bin\Debug\VECS_FINAL.exe
+c:\users\keroles\documents\visual studio 2010\Projects\VECS_FINAL\VECS_FINAL\bin\Debug\VECS_FINAL.pdb
+c:\users\keroles\documents\visual studio 2010\Projects\VECS_FINAL\VECS_FINAL\obj\x86\Debug\VECS_FINAL.control.resources
+c:\users\keroles\documents\visual studio 2010\Projects\VECS_FINAL\VECS_FINAL\obj\x86\Debug\VECS_FINAL.login.resources
+c:\users\keroles\documents\visual studio 2010\Projects\VECS_FINAL\VECS_FINAL\obj\x86\Debug\VECS_FINAL.VECS_Project.resources
+c:\users\keroles\documents\visual studio 2010\Projects\VECS_FINAL\VECS_FINAL\obj\x86\Debug\VECS_FINAL.Properties.Resources.resources
+c:\users\keroles\documents\visual studio 2010\Projects\VECS_FINAL\VECS_FINAL\obj\x86\Debug\VECS_FINAL.csproj.GenerateResource.Cache
+c:\users\keroles\documents\visual studio 2010\Projects\VECS_FINAL\VECS_FINAL\obj\x86\Debug\VECS_FINAL.exe
+c:\users\keroles\documents\visual studio 2010\Projects\VECS_FINAL\VECS_FINAL\obj\x86\Debug\VECS_FINAL.pdb
+C:\Users\keroles\documents\visual studio 2010\Projects\VECS_FINAL\VECS_FINAL\obj\x86\Debug\VECS_FINAL.csprojResolveAssemblyReference.cache
+C:\Users\keroles\Documents\Visual Studio 2010\Projects\VECS_FINAL\VECS_FINAL\obj\x86\Debug\VECS_FINAL.sensor.resources
+C:\Users\keroles\Documents\Visual Studio 2010\Projects\VECS_FINAL\VECS_FINAL\obj\x86\Debug\VECS_FINAL.newdesign.resources
+F:\الشغل الجديد\VECS_FINAL\VECS_FINAL\bin\Debug\VECS_FINAL.exe
+F:\الشغل الجديد\VECS_FINAL\VECS_FINAL\bin\Debug\VECS_FINAL.pdb
+F:\الشغل الجديد\VECS_FINAL\VECS_FINAL\obj\x86\Debug\VECS_FINAL.csprojResolveAssemblyReference.cache
+F:\الشغل الجديد\VECS_FINAL\VECS_FINAL\obj\x86\Debug\VECS_FINAL.control.resources
+F:\الشغل الجديد\VECS_FINAL\VECS_FINAL\obj\x86\Debug\VECS_FINAL.login.resources
+F:\الشغل الجديد\VECS_FINAL\VECS_FINAL\obj\x86\Debug\VECS_FINAL.newdesign.resources
+F:\الشغل الجديد\VECS_FINAL\VECS_FINAL\obj\x86\Debug\VECS_FINAL.sensor.resources
+F:\الشغل الجديد\VECS_FINAL\VECS_FINAL\obj\x86\Debug\VECS_FINAL.VECS_Project.resources
+F:\الشغل الجديد\VECS_FINAL\VECS_FINAL\obj\x86\Debug\VECS_FINAL.Properties.Resources.resources
+F:\الشغل الجديد\VECS_FINAL\VECS_FINAL\obj\x86\Debug\VECS_FINAL.csproj.GenerateResource.Cache
+F:\الشغل الجديد\VECS_FINAL\VECS_FINAL\obj\x86\Debug\VECS_FINAL.exe
+F:\الشغل الجديد\VECS_FINAL\VECS_FINAL\obj\x86\Debug\VECS_FINAL.pdb
+F:\new kero\VECS_FINAL\VECS_FINAL\bin\Debug\VECS.exe.config
+F:\new kero\VECS_FINAL\VECS_FINAL\bin\Debug\VECS.exe.manifest
+F:\new kero\VECS_FINAL\VECS_FINAL\bin\Debug\VECS.application
+F:\new kero\VECS_FINAL\VECS_FINAL\bin\Debug\VECS.exe
+F:\new kero\VECS_FINAL\VECS_FINAL\bin\Debug\VECS.pdb
+F:\new kero\VECS_FINAL\VECS_FINAL\obj\x86\Debug\VECS_FINAL.control.resources
+F:\new kero\VECS_FINAL\VECS_FINAL\obj\x86\Debug\VECS_FINAL.login.resources
+F:\new kero\VECS_FINAL\VECS_FINAL\obj\x86\Debug\VECS_FINAL.newdesign.resources
+F:\new kero\VECS_FINAL\VECS_FINAL\obj\x86\Debug\VECS_FINAL.sensor.resources
+F:\new kero\VECS_FINAL\VECS_FINAL\obj\x86\Debug\VECS_FINAL.VECS_Project.resources
+F:\new kero\VECS_FINAL\VECS_FINAL\obj\x86\Debug\VECS.Properties.Resources.resources
+F:\new kero\VECS_FINAL\VECS_FINAL\obj\x86\Debug\VECS_FINAL.csproj.GenerateResource.Cache
+F:\new kero\VECS_FINAL\VECS_FINAL\obj\x86\Debug\VECS.exe.manifest
+F:\new kero\VECS_FINAL\VECS_FINAL\obj\x86\Debug\VECS.application
+F:\new kero\VECS_FINAL\VECS_FINAL\obj\x86\Debug\VECS.exe
+F:\new kero\VECS_FINAL\VECS_FINAL\obj\x86\Debug\VECS.pdb
+F:\الشغل الجديد\new melo\VECS_FINAL\VECS_FINAL\bin\Debug\VECS.exe.config
+F:\الشغل الجديد\new melo\VECS_FINAL\VECS_FINAL\obj\x86\Debug\VECS.exe
+F:\الشغل الجديد\new melo\VECS_FINAL\VECS_FINAL\obj\x86\Debug\VECS.pdb
+F:\الشغل الجديد\new melo\VECS_FINAL\VECS_FINAL\bin\Debug\VECS.exe.manifest
+F:\الشغل الجديد\new melo\VECS_FINAL\VECS_FINAL\bin\Debug\VECS.application
+F:\الشغل الجديد\new melo\VECS_FINAL\VECS_FINAL\bin\Debug\VECS.exe
+F:\الشغل الجديد\new melo\VECS_FINAL\VECS_FINAL\bin\Debug\VECS.pdb
+F:\الشغل الجديد\new melo\VECS_FINAL\VECS_FINAL\obj\x86\Debug\VECS_FINAL.control.resources
+F:\الشغل الجديد\new melo\VECS_FINAL\VECS_FINAL\obj\x86\Debug\VECS_FINAL.login.resources
+F:\الشغل الجديد\new melo\VECS_FINAL\VECS_FINAL\obj\x86\Debug\VECS_FINAL.newdesign.resources
+F:\الشغل الجديد\new melo\VECS_FINAL\VECS_FINAL\obj\x86\Debug\VECS_FINAL.sensor.resources
+F:\الشغل الجديد\new melo\VECS_FINAL\VECS_FINAL\obj\x86\Debug\VECS_FINAL.VECS_Project.resources
+F:\الشغل الجديد\new melo\VECS_FINAL\VECS_FINAL\obj\x86\Debug\VECS.Properties.Resources.resources
+F:\الشغل الجديد\new melo\VECS_FINAL\VECS_FINAL\obj\x86\Debug\VECS_FINAL.csproj.GenerateResource.Cache
+F:\الشغل الجديد\new melo\VECS_FINAL\VECS_FINAL\obj\x86\Debug\VECS.exe.manifest
+F:\الشغل الجديد\new melo\VECS_FINAL\VECS_FINAL\obj\x86\Debug\VECS.application
+F:\الشغل الجديد\new melo\VECS_FINAL\VECS_FINAL\obj\x86\Debug\VECS_FINAL.csprojResolveAssemblyReference.cache

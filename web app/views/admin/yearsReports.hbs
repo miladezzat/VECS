@@ -1,0 +1,20 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/admin/profile">Profile</a></li>
+    <li class="breadcrumb-item"><a href="/admin/dashboard">Dashboard</a></li>
+	<li class="breadcrumb-item"><a href="/admin/{{type}}">{{type}}</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Years Reports</li>
+  </ol>
+</nav>
+<div class="row" id="days-reports">
+	<div class="col-12">
+		<h1 class="text-center text-primary"> <span class="text-capitalize">{{type}}</span> Years Reports</h1>
+	</div>
+    {{#each years}}
+    <div class="col-12">
+      <a href="/admin/yearly/{{type}}/{{this.year}}">
+        <div class="day h1 text-success">Year : {{this.year}}</div>
+      </a>
+    </div>
+    {{/each}}    
+</div>

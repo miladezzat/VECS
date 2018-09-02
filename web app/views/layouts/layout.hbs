@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{title}}</title>
+    <meta name="description" content="This is web created by Milad Ezzat, by using node js and expressjs">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Milad Ezzat Fahmy">
+    <link rel="icon" type="image/png" href="/images/logo.png" />
+    <!--Import google fonts -->
+    <link href="/stylesheets/googlefonts.css" rel="stylesheet">
+    <!--Import bootstrap.css-->
+    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css"  media="screen,projection"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--Import Fontawesome -->
+    <script defer src="/fontawesome/svg-with-js/js/fontawesome-all.js"></script>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    {{>header}}
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <p id="msgalarm" class="alert alert-warning clearfix">
+            <span id="message">msg</span>
+            <button id="warning" onclick="stop();" style="float: right;" class="btn btn-danger">Stop Alarm</button>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      {{{body}}}
+    </div>
+   <!-- {{>footer}} -->
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="/javascripts/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="/javascripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/javascripts/canvasjs.min.js"></script>
+    <script>
+      var time = 3000;
+      var audio = new Audio('/images/danger-alarm-23793.mp3');
+      var m = setInterval(function(){
+        $(document).ready(function () {
+          $.ajax({
+            async: false,
+            type: "POST",
+            url: "http://localhost:3000/admin/alarm",
+            //data: `{status:'on'}`,
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (responseFromServer) {
+              if(responseFromServer.status == 1){
+                audio.play();
+                document.getElementById("warning").style.display = "block";
+                document.getElementById("msgalarm").style.display = "block";
+                document.getElementById("message").innerHTML = responseFromServer.msg;
+                } else{
+                  audio.pause();
+                  audio.currentTime = 0;
+                  document.getElementById("warning").style.display = "none";
+                  document.getElementById("msgalarm").style.display = "none";
+                }
+            }
+          })
+      });
+    },time);
+    function stop(){
+        //clearInterval(m);
+        audio.pause();
+        audio.currentTime = 0;
+      }
+    </script>
+  </body>
+</html>
